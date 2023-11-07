@@ -24,29 +24,42 @@ body{
 header{
     width: 100%;
     height: 150px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     border-bottom: 1px solid;
     background-color: white;
+    justify-self: center;
 }
 
-header h1{
+header div{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+header div h1{
+    padding: 15px;
     font-family: var(--fonte3);
     font-weight: 900;
     color: var(--cor1);
     font-variant: small-caps;
-    font-size: 3em;
+    font-size: 3em; 
+    text-shadow: 1px 1px 5px black;
+}
+
+header div img{
+    display: inline-flex;
+}
+
+header nav{
 }
 
 header nav ul{
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 header nav ul li{
     list-style: none;
-    display: inline;
     padding: 10px;
 }
 
@@ -59,7 +72,7 @@ header nav ul li a{
 }
 
 header nav ul li:hover{
-    border-bottom: 2px solid #0051ff;
+    border-bottom: 5px solid #0051ff;
     color: var(--cor3);
 }
 
@@ -92,11 +105,26 @@ main section#text-with-background h1{
 }
 
 main section#about-david{
-    width: 80%;
-    height: 400px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    justify-content: space-around;
+
+}
+
+main section#about-david aside{
+    width: 40%;
     padding: 30px;
     color: var(--cor4);
+}
+
+span.text-about-david{
+    color: yellow;
+    font-weight: bold;
+}
+
+main section#about-david img{
+    border-radius: 50%;
 }
 
 main section#about-david h1{
