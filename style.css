@@ -3,29 +3,91 @@
     margin: 0;
 }
 
+::selection{
+    background-color: var(--cor2);
+    color: var(--cor3);
+}
 
 :root{
-    --cor1: #1FB0E0;
-    --cor2: #1F36E0;
-    --cor3: #1F73E0;
-    --cor4: #1FE0D3;
+    --cor1: #140057;
+    --cor1-transparent: #14005785;
+    --cor2: #f1bc02;
+    --cor3: #ffffff;
+    --cor4: #000000;
     --cor5: #471FE0;
     
     --fonte1: 'Rowdies', sans-serif;
     --fonte2: 'Satisfy', cursive;
     --fonte3: 'Josefin Sans', sans-serif;
+    --fonte4: 'Kanit', sans-serif;
+}
+
+body#abertura-de-empresa ul li.abertura-de-empresa a,
+body#servicos-contabilidade ul li.servicos-contabilidade a,
+body#bpo-financeiro ul li.bpo-financeiro a,
+body#planos-mensais ul li.planos-mensais a,
+body#recursos-do-cliente ul li.recursos-do-cliente a,
+body#contato ul li.contato a,
+body#agendamento ul li.agendamento a{
+    background-color: #1f73e083;
+    color: white;
+    border-bottom: 1px solid red;
+    transition-duration: 0.6s;
 }
 
 body{
-    background: linear-gradient(45deg, rgb(6, 83, 155), #487ceb);
+    background: linear-gradient(45deg, var(--cor1), var(--cor1-transparent));
     font-family: var(--fonte3);
+}
+
+section.construcao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    height: 500px;
+}
+
+body#sinais .sinais{
+    display: flex;
+    background-color: var(--cor1-transparent);
+    padding: 30px;
+    margin: auto;
+    width: 80%;
+    height: 500px;
+}
+
+body#sinais .sinais h1{
+    color: var(--cor2);
+    font-size: 2.5em;
+    padding-bottom: 35px;
+    text-align: center;
+    margin: auto;
+    font-size: 2.8em;
+    padding: 15px;
+    background-color: var(--cor1-transparent);
+    color: var(--cor2);
+}
+
+body#sinais p{
+    color: var(--cor3);
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    font-size: 1.6em;
+}
+
+body#sinais .sinais h2{
+    color: var(--cor2);
 }
 
 header{
     width: 100%;
     min-height: 10vh;
     border-bottom: 1px solid;
-    background-color: white;
+    background-color: var(--cor1);
     justify-self: center;
 }
 
@@ -37,9 +99,9 @@ header div{
 
 header div h1{
     padding: 15px;
-    font-family: var(--fonte3);
-    font-weight: 900;
-    color: var(--cor1);
+    font-family: var(--fonte4);
+    font-weight: 500;
+    color: var(--cor2);
     font-variant: small-caps;
     font-size: 3em;
     text-shadow: 1px 1px 5px black;
@@ -73,7 +135,7 @@ header nav ul li{
 header nav ul li a{
     text-decoration: none;
     font-family: var(--fonte3);
-    color: var(--cor1);
+    color: var(--cor2);
     font-size: 1.3em;
     font-weight: 300;
     padding: 10px;
@@ -82,7 +144,7 @@ header nav ul li a{
 header nav ul li a:hover{
     background-color: #1F73E0;
     color: white;
-    border-bottom: 4px solid red;
+    border-bottom: 1px solid red;
     transition-duration: 0.6s;
 }
 
@@ -96,8 +158,9 @@ main div.whatsapp-click{
     position: fixed;
     bottom: 0;
     right: 0;
+    z-index: 0;
 }
-main section#text-with-background{
+main section.text-with-background{
     display: flex;
     background-image: url('imagens/mesa-contabilidade.jpg');
     background-position: center;
@@ -107,15 +170,16 @@ main section#text-with-background{
     box-shadow: 0px 1px 10px 0px black;
 }
 
-main section#text-with-background h1{
+body#home main section.text-with-background h1{
     margin: auto;
     font-size: 2.8em;
     padding: 15px;
-    background-color: rgba(255, 255, 255, 0.466);
+    background-color: var(--cor1-transparent);
     color: var(--cor2);
 }
 
 main section#about-david{
+    background-color: var(--cor1);
     display: flex;
     text-align: justify;
     flex-wrap: wrap;
@@ -127,17 +191,18 @@ main section#about-david aside div{
     max-width: 500px;
     min-width: 40%;
     padding: 30px;
-    color: var(--cor4);
+    color: var(--cor2);
 }
 
 span.text-about-david{
-    color: yellow;
+    color: var(--cor2);
     font-weight: bold;
 }
 
 main section#about-david img{
     border-radius: 50%;
     margin: 20px 0;
+    box-shadow: 0px 0px 5px 1px white;
 }
 
 main section#about-david h1{
@@ -146,11 +211,14 @@ main section#about-david h1{
     font-size: 2.5em;
     padding-bottom: 10px;
     border-bottom: 1px solid var(--cor5);
+    text-shadow: 0px 0px 2px var(--cor5);
 }
 
 main section#about-david p{
+    color: var(--cor3);
     padding-top: 30px;
     font-size: 1.7em;
+    line-height: 1.3em;
 }
 
 main section#feed{
@@ -179,30 +247,46 @@ main section#feed .caixa{
 
 main section#feed .caixa h1{
     padding-bottom: 15px;
-    color: #1F36E0;
+    color: var(--cor2);
     text-shadow: 1px 1px 5px var(--cor4);
 }
 
+main section#feed .caixa p{
+    color: var(--cor3);
+}
+
 main section#feed .caixa a{
-    color: var(--cor5);
+    color: var(--cor2);
     text-decoration: none;
 }
 
 footer{
+    position: relative;
     width: 100%;
     height: 80px;
     background-color: black;
-    color: var(--cor4);
+    color: var(--cor2);
     text-align: center;
     padding: 30px 0;
+    z-index: 1;
 }
 
 footer img{
     width: 30px;
+    border-radius: 50%;
 }
 
 footer p{
-    font-size: 0.8em;
+    font-size: 0.7em;
     position: relative;
     top: 25%;
+}
+
+footer a{
+    color: var(--cor3);
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
 }
