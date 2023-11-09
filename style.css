@@ -160,6 +160,16 @@ body#sinais .sinal5{
     background-attachment: fixed;
 }
 
+body#sinais aside h2{
+    color: var(--cor2);
+    width: auto;
+    height: 300px;
+    font-size: 3em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
 /***************************************************************************************************************/
 header{
     width: 100%;
