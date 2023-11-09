@@ -9,9 +9,10 @@
 }
 
 :root{
-    --cor1: #140057;
+    --cor1: #0b022b;
     --cor1-transparent: #14005785;
-    --cor2: #f1bc02;
+    --cor2: #e7bc44;
+    --cor2-transparent: #e7bc44a9;
     --cor3: #ffffff;
     --cor4: #000000;
     --cor5: #471FE0;
@@ -39,7 +40,7 @@ body{
     background: linear-gradient(45deg, var(--cor1), var(--cor1-transparent));
     font-family: var(--fonte3);
 }
-
+/****************************************************************************************************************/
 section.construcao{
     display: flex;
     align-items: center;
@@ -49,19 +50,46 @@ section.construcao{
     text-align: center;
     height: 500px;
 }
+/*****************************************************************************************************************/
+
+body#sinais{
+    background-color: #000000;
+}
 
 body#sinais .sinais{
     display: flex;
-    background-color: var(--cor1-transparent);
+    background-image: url('imagens/produtividade.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     padding: 30px;
     margin: auto;
-    width: 80%;
+    width: auto;
     height: 500px;
 }
 
+
+body#sinais aside h1{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: var(--cor2);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    font-style: italic;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
 body#sinais .sinais h1{
+    width: 80%;
     color: var(--cor2);
-    font-size: 2.5em;
     padding-bottom: 35px;
     text-align: center;
     margin: auto;
@@ -69,20 +97,70 @@ body#sinais .sinais h1{
     padding: 15px;
     background-color: var(--cor1-transparent);
     color: var(--cor2);
+    box-shadow: 0px 0px 10px 0px black;
 }
 
-body#sinais p{
-    color: var(--cor3);
+body#sinais section p{
+    color: var(--cor1);
     width: 70%;
-    margin: auto;
+    margin: 150px auto;
     padding: 10px;
-    font-size: 1.6em;
+    font-size: 2em;
+    background-color: var(--cor2-transparent);
+    border-radius: 0 20px 0 20px;
+    line-height: 150%;
+    box-shadow: 0px 0px 10px 0px black;
 }
 
 body#sinais .sinais h2{
     color: var(--cor2);
 }
 
+body#sinais .sinal1, .sinal2, .sinal3, .sinal4, .sinal5{
+    font-weight: bolder;
+    width: auto;
+    border-bottom: 5px solid var(--cor1);
+    display: flex;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+body#sinais .sinal1{
+    background-image: url('imagens/1-desanimo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body#sinais .sinal2{
+    background-image: url('imagens/2-ideias-novas.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body#sinais .sinal3{
+    background-image: url('imagens/3-crescimento-profissional.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body#sinais .sinal4{
+    background-image: url('imagens/4-conversando-feliz.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body#sinais .sinal5{
+    background-image: url('imagens/5-ajudando.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/***************************************************************************************************************/
 header{
     width: 100%;
     min-height: 10vh;
