@@ -50,7 +50,38 @@ section.construcao{
     text-align: center;
     height: 500px;
 }
-/*****************************************************************************************************************/
+
+/********************************* BPO FINANCEIRO  ***************************************************************/
+
+body#bpo-financeiro section.bpo{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: white;
+    color: var(--cor1);
+}
+
+body#bpo-financeiro section.bpo h1{
+    font-size: 4vmax;
+    display: flex;
+    margin: auto;
+    padding: 50px;
+}
+
+body#bpo-financeiro section.bpo p{
+    font-size: 100%;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    text-align: justify;
+}
+
+body#bpo-financeiro section.bpo ol li{
+    list-style-type: 1;
+}
+
+
+/**********************************  5 SINAIS   ***************************************************************/
 
 body#sinais{
     background-color: #000000;
