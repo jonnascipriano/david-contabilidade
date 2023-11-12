@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Old+Uyghur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -9,6 +12,8 @@
 }
 
 :root{
+    --header-background: #BABABA;
+    --header-h1-color: #b8b6b6;
     --cor1: #0b022b;
     --cor1-transparent: #14005785;
     --cor2: #e7bc44;
@@ -21,65 +26,14 @@
     --fonte2: 'Satisfy', cursive;
     --fonte3: 'Josefin Sans', sans-serif;
     --fonte4: 'Kanit', sans-serif;
-}
-
-body#abertura-de-empresa ul li.abertura-de-empresa a,
-body#servicos-contabilidade ul li.servicos-contabilidade a,
-body#bpo-financeiro ul li.bpo-financeiro a,
-body#planos-mensais ul li.planos-mensais a,
-body#recursos-do-cliente ul li.recursos-do-cliente a,
-body#contato ul li.contato a,
-body#agendamento ul li.agendamento a{
-    background-color: #1f73e083;
-    color: white;
-    border-bottom: 1px solid red;
-    transition-duration: 0.6s;
+    --fonte5: 'Noto Serif Old Uyghur', serif;
+    --fonte6: 'Roboto Condensed', sans-serif;
 }
 
 body{
     background: linear-gradient(45deg, var(--cor1), var(--cor1-transparent));
     font-family: var(--fonte3);
 }
-/****************************************************************************************************************/
-section.construcao{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    height: 500px;
-}
-
-/********************************* BPO FINANCEIRO  ***************************************************************/
-
-body#bpo-financeiro section.bpo{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    background-color: white;
-    color: var(--cor1);
-}
-
-body#bpo-financeiro section.bpo h1{
-    font-size: 4vmax;
-    display: flex;
-    margin: auto;
-    padding: 50px;
-}
-
-body#bpo-financeiro section.bpo p{
-    font-size: 100%;
-    margin: auto;
-    width: 90%;
-    padding: 10px;
-    text-align: justify;
-}
-
-body#bpo-financeiro section.bpo ol li{
-    list-style-type: 1;
-}
-
 
 /**********************************  5 SINAIS   ***************************************************************/
 
@@ -207,18 +161,118 @@ body#sinais aside h2{
 /***************************************************************************************************************/
 header{
     width: 100%;
-    min-height: 10vh;
     border-bottom: 1px solid;
-    background-color: var(--cor1);
-    justify-self: center;
-}
-
-header div{
-    padding: 15px;
+    background-color: var(--cor3);
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
+header div#logo{
+    position: relative;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    padding: 30px;
+}
+
+header div#logo img{
+    max-width: 230px;
+    margin: auto;
+}
+
+header div#logo h1{
+    font-size: 2em;
+    font-family: var(--fonte5);
+    text-align: center;
+    color: var(--header-h1-color);
+    text-shadow: 
+               -1px -1px 0px #000, 
+               -1px 1px 0px #000,                    
+                1px -1px 0px #000,                  
+                1px 0px 0px #000;
+}
+
+header div h2{
+    text-align: center;
+    font-size: 0.83em;
+    font-family: var(--fonte6);
+    color: var(--cor1-transparent);
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    line-height: 50px;
+    justify-content: space-around;
+}
+
+
+header nav ul{
+    list-style: none;
+    text-transform: uppercase;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: var(--cor1-transparent);
+    padding: 15px;
+    font-weight: bold;
+}
+
+header nav ul li a:hover{
+    border-bottom: 1px solid var(--cor2);
+    transition: 0.4s;
+}
+
+header div#contato{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+header div#entre-em-contato h1{
+    color: var(--cor1-transparent);
+    text-align: right;
+    font-size: 1.2em;
+    padding: 15px 0;
+}
+
+header div#links{
+    display: flex;
+    justify-content: right;
+}
+
+header div#contato a img{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+header div#contato a img.whatsapp:hover{
+    background-color: lawngreen;
+    transition: 0.5s;
+}
+
+header div#contato a img.instagram:hover{
+    background-image: linear-gradient(to right, #FCC034, #FA3285, #771CCA);
+    transition: 0.4s;
+}
+
+header div#contato a img.email:hover{
+    transition: 0.5s;
+    background-color: #DC483B;
+}
+
+header div#contato a img.linkedin:hover{
+    background-color: #0274B3;
+    transition: 0.5s;
+}
+
+/*
 header div h1{
     padding: 15px;
     font-family: var(--fonte4);
@@ -228,14 +282,9 @@ header div h1{
     font-size: 3em;
     text-shadow: 1px 1px 5px black;
 }
+*/
 
-header>div>img{
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-self: center;
-}
-
+/*
 header nav{
     width: 100%;
 }
@@ -269,7 +318,9 @@ header nav ul li a:hover{
     border-bottom: 1px solid red;
     transition-duration: 0.6s;
 }
+*/
 
+/*******************************************MAIN********************************************************/
 main{
     display: block;
 }
@@ -341,6 +392,38 @@ main section#about-david p{
     padding-top: 30px;
     font-size: 1.7em;
     line-height: 1.3em;
+}
+
+main section#bpo{
+    width: 80%;
+    background-color: var(--cor3);
+    padding: 40px;
+    margin: auto;
+}
+
+main section#bpo h1{
+    font-size: 200%;
+    text-align: center;
+    padding-bottom: 50px;
+    color: var(--cor1);
+}
+
+main section#bpo p{
+    font-size: 100%;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+
+main section#bpo h2{
+    padding: 15px 0;
+}
+main section#bpo h3{
+    padding: 10px 0;
+}
+
+main section#bpo span{
+    color: var(--cor5);
+    font-weight: bold;
 }
 
 main section#feed{
