@@ -409,18 +409,22 @@ main section#servicos h1{
     text-align: center;
     padding: 50px;
     color: var(--cor2);
+    text-shadow: 5px 5px 10px var(--cor4);
 }
 
 main section#servicos h2{
     text-align: center;
     color: var(--cor2);
     font-size: 200%;
+    padding-bottom: 10px;
+    text-shadow: 5px 5px 10px var(--cor4);
 }
 
 
 main section#servicos img{
     border-radius: 10px;
     width: 300px;
+    box-shadow: 1px 1px 10px 1px black;
 }
 
 
@@ -429,7 +433,8 @@ main section#servicos div#dp,
 main section#servicos div#mei-me,
 main section#servicos div#ass-fis-tri,
 main section#servicos div#ab-fch-emp{
-    background-image: url('https://img.freepik.com/free-vector/white-abstract-background_23-2148806276.jpg');
+    background-image: url('imagens/background-servicos-caixa.jpg');
+    background-size: cover;
     background-attachment: fixed;
     display: flex;
     flex-direction: row;
@@ -442,6 +447,7 @@ main section#servicos div#ab-fch-emp{
     border-radius: 10px;
     padding: 30px;
     align-items: center;
+    box-shadow: 1px 1px 10px 1px black;
 }
 
 main section#servicos div#ass-contabil p,
@@ -450,7 +456,7 @@ main section#servicos div#mei-me p,
 main section#servicos div#ass-fis-tri p,
 main section#servicos div#ab-fch-emp p{
     font-size: 150%;
-    color: var(--cor1);
+    color: var(--cor4);
     padding: 30px 0;
     text-align: justify;
 }
@@ -579,8 +585,8 @@ footer div#contato a img.whatsapp:hover{
 }
 
 footer div#contato a img.instagram:hover{
-    background-image: linear-gradient(to right, #FCC034, #FA3285, #771CCA);
-    transition: 0.4s;
+    background-color: #FA3285;
+    transition: 0.5s;
 }
 
 footer div#contato a img.email:hover{
