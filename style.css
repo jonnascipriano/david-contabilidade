@@ -31,7 +31,6 @@
 }
 
 body{
-    background: linear-gradient(45deg, var(--cor1), var(--cor1-transparent));
     font-family: var(--fonte3);
 }
 
@@ -161,7 +160,7 @@ body#sinais aside h2{
 /***************************************************************************************************************/
 header{
     border-bottom: 1px solid;
-    background-image: url('imagens/background-header.avif');
+    background-image: url('imagens/background-header.jpg');
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -395,6 +394,73 @@ main section#bpo ul li{
     list-style-type: square;
 }
 
+main section#servicos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url('imagens/background-servicos.jpg');
+    color: white;
+    padding: 30px 0;
+}
+
+main section#servicos h1{
+    font-size: 350%;
+    text-align: center;
+    padding: 50px;
+    color: var(--cor2);
+}
+
+main section#servicos h2{
+    text-align: center;
+    color: var(--cor2);
+    font-size: 200%;
+}
+
+
+main section#servicos img{
+    border-radius: 10px;
+    width: 300px;
+}
+
+
+main section#servicos div#ass-contabil,
+main section#servicos div#dp,
+main section#servicos div#mei-me,
+main section#servicos div#ass-fis-tri,
+main section#servicos div#ab-fch-emp{
+    background-image: url('https://img.freepik.com/free-vector/white-abstract-background_23-2148806276.jpg');
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 30px;
+    align-items: center;
+}
+
+main section#servicos div#ass-contabil p,
+main section#servicos div#dp p,
+main section#servicos div#mei-me p,
+main section#servicos div#ass-fis-tri p,
+main section#servicos div#ab-fch-emp p{
+    font-size: 150%;
+    color: var(--cor1);
+    padding: 30px 0;
+    text-align: justify;
+}
+
+main section#servicos span{
+    font-weight: bold;
+    color: var(--cor5);
+}
+
+
 main section#feed{
     display: flex;
     flex-direction: row;
@@ -436,7 +502,7 @@ main section#feed .caixa a{
 
 footer{
     position: relative;
-    background-image: url('imagens/background-footer.avif');
+    background-image: url('imagens/background-footer.jpg');
     background-attachment: fixed;
     box-shadow: 1px 1px 10px 1px inset black;
 }
@@ -532,4 +598,5 @@ footer div#creditos{
     font-size: 0.8em;
     text-align: center;
     margin: auto;
+    padding-bottom: 10px;
 }
