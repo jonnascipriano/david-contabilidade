@@ -14,7 +14,7 @@
 :root{
     --header-background: #BABABA;
     --header-h1-color: #b8b6b6;
-    --cor1: #0b022b;
+    --cor1: rgb(2, 0, 124);
     --cor1-transparent: #14005785;
     --cor2: #e7bc44;
     --cor2-transparent: #e7bc44a9;
@@ -160,29 +160,29 @@ body#sinais aside h2{
 
 /***************************************************************************************************************/
 header{
-    width: 100%;
     border-bottom: 1px solid;
-    background-color: var(--cor3);
+    background-image: url('imagens/background-header.avif');
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-header div#logo{
+header div.logo{
     position: relative;
     min-width: 220px;
     display: flex;
     flex-direction: column;
     align-self: start;
-    padding: 30px;
+    padding: 3px;
 }
 
-header div#logo img{
+header div.logo img{
     max-width: 230px;
-    margin: auto;
 }
 
-header div#logo h1{
+header div.logo h1{
     font-size: 2em;
     font-family: var(--fonte5);
     text-align: center;
@@ -194,7 +194,7 @@ header div#logo h1{
                 1px 0px 0px #000;
 }
 
-header div h2{
+header div.logo h2{
     text-align: center;
     font-size: 0.83em;
     font-family: var(--fonte6);
@@ -206,6 +206,7 @@ header nav{
     align-items: center;
     line-height: 50px;
     justify-content: space-around;
+    text-align: center;
 }
 
 
@@ -224,52 +225,6 @@ header nav ul li a{
 header nav ul li a:hover{
     border-bottom: 1px solid var(--cor2);
     transition: 0.4s;
-}
-
-header div#contato{
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-}
-
-header div#entre-em-contato h1{
-    color: var(--cor1-transparent);
-    text-align: right;
-    font-size: 1.2em;
-    padding: 15px 0;
-}
-
-header div#links{
-    display: flex;
-    justify-content: right;
-}
-
-header div#contato a img{
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-}
-
-header div#contato a img.whatsapp:hover{
-    background-color: lawngreen;
-    transition: 0.5s;
-}
-
-header div#contato a img.instagram:hover{
-    background-image: linear-gradient(to right, #FCC034, #FA3285, #771CCA);
-    transition: 0.4s;
-}
-
-header div#contato a img.email:hover{
-    transition: 0.5s;
-    background-color: #DC483B;
-}
-
-header div#contato a img.linkedin:hover{
-    background-color: #0274B3;
-    transition: 0.5s;
 }
 
 /*
@@ -352,7 +307,7 @@ body#home main section.text-with-background h1{
 }
 
 main section#about-david{
-    background-color: var(--cor1);
+    background-color: var(--cor4);
     display: flex;
     text-align: justify;
     flex-wrap: wrap;
@@ -360,9 +315,9 @@ main section#about-david{
 }
 
 main section#about-david aside div{
-    flex-wrap: wrap;
     max-width: 500px;
     min-width: 40%;
+    flex-wrap: wrap;
     padding: 30px;
     color: var(--cor2);
 }
@@ -390,40 +345,54 @@ main section#about-david h1{
 main section#about-david p{
     color: var(--cor3);
     padding-top: 30px;
-    font-size: 1.7em;
+    font-size: 150%;
     line-height: 1.3em;
 }
 
 main section#bpo{
-    width: 80%;
-    background-color: var(--cor3);
-    padding: 40px;
-    margin: auto;
+    background-image: url('https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-147801.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30px 0;
 }
 
 main section#bpo h1{
     font-size: 200%;
     text-align: center;
-    padding-bottom: 50px;
+    padding: 50px;
     color: var(--cor1);
 }
 
 main section#bpo p{
-    font-size: 100%;
     padding-bottom: 15px;
     text-align: justify;
+    margin: 0 10%;
 }
 
 main section#bpo h2{
     padding: 15px 0;
+    margin: 0 10%;
+    color: var(--cor1);
 }
 main section#bpo h3{
     padding: 10px 0;
+    margin: 0 10%;
+}
+
+main section#bpo img{
+    display: block;
+    margin: auto;
 }
 
 main section#bpo span{
-    color: var(--cor5);
+    color: var(--cor1);
     font-weight: bold;
+}
+
+main section#bpo ul li{
+    margin: 0 10%;
+    list-style-type: square;
 }
 
 main section#feed{
@@ -467,31 +436,100 @@ main section#feed .caixa a{
 
 footer{
     position: relative;
-    width: 100%;
-    height: 80px;
-    background-color: black;
-    color: var(--cor2);
+    background-image: url('imagens/background-footer.avif');
+    background-attachment: fixed;
+    box-shadow: 1px 1px 10px 1px inset black;
+}
+
+footer div#rodape{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+footer div.logo{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 30px;
+}
+
+footer div.logo img{
+    max-width: 230px;
+    margin: auto;
+}
+
+footer div.logo h1{
+    font-size: 2em;
+    font-family: var(--fonte5);
     text-align: center;
-    padding: 30px 0;
-    z-index: 1;
+    color: var(--header-h1-color);
+    text-shadow: 
+               -1px -1px 0px #000, 
+               -1px 1px 0px #000,                    
+                1px -1px 0px #000,                  
+                1px 0px 0px #000;
 }
 
-footer img{
-    width: 30px;
+footer div h2{
+    text-align: center;
+    font-size: 0.83em;
+    font-family: var(--fonte6);
+    color: var(--cor1-transparent);
+}
+
+footer div#contato{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: auto;
+}
+
+footer div#entre-em-contato h1{
+    display: flex;
+    color: var(--cor1-transparent);
+    text-align: right;
+    font-size: 1.2em;
+    padding: 15px 0;
+}
+
+footer div#links{
+    display: flex;
+    justify-content: right;
+}
+
+footer div#contato a img{
+    display: flex;
+    background-color: white;
+    border: 1px solid white;
     border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
 
-footer p{
-    font-size: 0.7em;
-    position: relative;
-    top: 25%;
+footer div#contato a img.whatsapp:hover{
+    background-color: lawngreen;
+    transition: 0.5s;
 }
 
-footer a{
-    color: var(--cor3);
-    text-decoration: none;
+footer div#contato a img.instagram:hover{
+    background-image: linear-gradient(to right, #FCC034, #FA3285, #771CCA);
+    transition: 0.4s;
 }
 
-footer a:hover{
-    text-decoration: underline;
+footer div#contato a img.email:hover{
+    transition: 0.5s;
+    background-color: #DC483B;
+}
+
+footer div#contato a img.linkedin:hover{
+    background-color: #0274B3;
+    transition: 0.5s;
+}
+
+footer div#creditos{
+    color: var(--cor1);
+    font-size: 0.8em;
+    text-align: center;
+    margin: auto;
 }
