@@ -575,6 +575,21 @@ footer div.logo img{
     margin: auto;
 }
 
+footer div.logo div#col-brv{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+footer div.logo div#col-brv ul li{
+    padding: 20px 0;
+    border: 1px solid red;
+}
+
+footer div.logo div#col-brv ul img{
+    width: 40px;
+}
+
 footer div.logo h1{
     font-size: 2em;
     font-family: var(--fonte5);
